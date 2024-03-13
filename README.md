@@ -67,10 +67,10 @@ REF NO : 212221240035
 ```python
 
 import gym
-desc=['SFFF','FHFG','FHFH','HFFF']
+desc = ['SFFF','FHFF','FFHF','FGFF']
 env = gym.make('FrozenLake-v1',desc=desc)
 init_state = env.reset()
-goal_state = 7
+goal_state = 13
 P = env.env.P
 
 def value_iteration(P, gamma=1.0, theta=1e-10):
